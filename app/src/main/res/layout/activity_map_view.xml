@@ -15,7 +15,7 @@
         android:background="@color/Primary">
 
         <ImageButton
-            android:id="@+id/img_logout"
+            android:id="@+id/img_user"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:src="@drawable/baseline_account_circle_24"
@@ -25,7 +25,7 @@
 
             />
         <ImageButton
-            android:id="@+id/img_user"
+            android:id="@+id/img_logout"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:src="@drawable/logout_2_svgrepo_com"
@@ -53,7 +53,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/taxi_svgrepo_com"
-            android:background="@drawable/roudedcornerIcon"
+            android:background="@drawable/roudedcornerbutton"
             android:padding="5dp"
             android:layout_alignParentStart="true"
             />
@@ -62,7 +62,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/taxi_svgrepo_com"
-            android:background="@drawable/roudedcornerSelectedIcon"
+            android:background="@drawable/roudedcornerselectedbutton"
             android:padding="5dp"
             android:layout_alignParentStart="true"
             android:visibility="invisible"
@@ -73,7 +73,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/bus_front_view_615_svgrepo_com"
-            android:background="@drawable/roudedcornerIcon"
+            android:background="@drawable/roudedcornerbutton"
             android:padding="5dp"
             android:layout_alignParentEnd="true"
             />
@@ -83,7 +83,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/bus_front_view_615_svgrepo_com"
-            android:background="@drawable/roudedcornerSelectedIcon"
+            android:background="@drawable/roudedcornerselectedbutton"
             android:padding="5dp"
             android:layout_alignParentEnd="true"
             android:visibility="invisible"
@@ -96,13 +96,29 @@
         android:layout_height="wrap_content"
         android:background="@drawable/roudedcorner"
         android:orientation="vertical"
-        android:padding="20dp">
-        <Spinner
-            android:id="@+id/list_taxi"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:entries="@array/taxi"
-            android:background="@drawable/roudedcorner2"/>
+        android:padding="10dp"
+        android:layout_marginHorizontal="10dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Spinner
+                android:id="@+id/list_taxi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/taxi"
+                android:background="@drawable/roudedcorner2"
+                android:visibility="invisible"/>
+            <Spinner
+                android:id="@+id/list_bus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/bus"
+                android:background="@drawable/roudedcorner2"
+                android:visibility="invisible"
+                tools:ignore="InvalidId" />
+
+        </RelativeLayout>
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -186,9 +202,11 @@
                 android:textColor="@color/ButtonText"
                 android:backgroundTint="@color/ButtonBG"
                 android:layout_alignParentStart="true"
+                android:paddingVertical="10dp"
                 />
             <Button
                 android:id="@+id/btn_Vamosla"
+                android:paddingVertical="10dp"
                 android:textSize="20sp"
                 android:layout_width="170dp"
                 android:layout_height="70dp"

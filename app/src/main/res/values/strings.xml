@@ -5,4 +5,10 @@
         <item>Uber</item>
         <item>99</item>
     </string-array>
+    <string-array name="bus">
+        <item>Ônibus</item>
+        <item>Trem</item>
+        <item>Metro</item>
+        <item>BRT</item>
+    </string-array>
 </resources>
