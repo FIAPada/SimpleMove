@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapView"
+    android:orientation="vertical"
+    android:background="@color/BG">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@color/Primary">
+
+        <ImageButton
+            android:id="@+id/img_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/baseline_account_circle_24"
+            android:background="@color/Primary"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="16dp"
+
+            />
+        <ImageButton
+            android:id="@+id/img_user"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/logout_2_svgrepo_com"
+            android:background="@color/Primary"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="16dp"
+
+            />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="291dp"
+        app:srcCompat="@drawable/img" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="7dp"
+        android:paddingHorizontal="15dp">
+        <ImageButton
+            android:id="@+id/btn_taxi_notselected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/taxi_svgrepo_com"
+            android:background="@drawable/roudedcornerIcon"
+            android:padding="5dp"
+            android:layout_alignParentStart="true"
+            />
+        <ImageButton
+            android:id="@+id/btn_taxi_selected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/taxi_svgrepo_com"
+            android:background="@drawable/roudedcornerSelectedIcon"
+            android:padding="5dp"
+            android:layout_alignParentStart="true"
+            android:visibility="invisible"
+            />
+
+        <ImageButton
+            android:id="@+id/btn_bus_notselected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bus_front_view_615_svgrepo_com"
+            android:background="@drawable/roudedcornerIcon"
+            android:padding="5dp"
+            android:layout_alignParentEnd="true"
+            />
+
+        <ImageButton
+            android:id="@+id/btn_bus_selected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bus_front_view_615_svgrepo_com"
+            android:background="@drawable/roudedcornerSelectedIcon"
+            android:padding="5dp"
+            android:layout_alignParentEnd="true"
+            android:visibility="invisible"
+            />
+
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roudedcorner"
+        android:orientation="vertical"
+        android:padding="20dp">
+        <Spinner
+            android:id="@+id/list_taxi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/taxi"
+            android:background="@drawable/roudedcorner2"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textAlignment="center"
+            >
+            <TextView
+                android:textSize="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tempo de viagem:"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"/>
+
+            <TextView
+                android:textSize="18dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="40 minutos"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textAlignment="center"
+            >
+            <TextView
+                android:textSize="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Destino:"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"/>
+
+            <TextView
+                android:textSize="18dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rua exemplo, 486"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textAlignment="center"
+            >
+            <TextView
+                android:textSize="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Valor:"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"/>
+
+            <TextView
+                android:textSize="18dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="R$30,00"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+            <Button
+                android:id="@+id/btn_cancelar"
+                android:layout_width="170dp"
+                android:layout_height="70dp"
+                android:text="Cancelar"
+                android:textSize="20sp"
+                android:textColor="@color/ButtonText"
+                android:backgroundTint="@color/ButtonBG"
+                android:layout_alignParentStart="true"
+                />
+            <Button
+                android:id="@+id/btn_Vamosla"
+                android:textSize="20sp"
+                android:layout_width="170dp"
+                android:layout_height="70dp"
+                android:text="Vamos lá!"
+                android:textColor="@color/ButtonText"
+                android:backgroundTint="@color/ButtonBG"
+                android:layout_alignParentEnd="true"/>
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

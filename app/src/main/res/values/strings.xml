@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">SimpleMove</string>
     <string name="title_activity_maps">MapsActivity</string>
+    <string-array name="taxi">
+        <item>Uber</item>
+        <item>99</item>
+    </string-array>
 </resources>
