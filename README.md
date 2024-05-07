@@ -16,6 +16,7 @@ Na tela Home, é apresentado o crédito do usuário e um input para pesquisa de 
 
 Na tela MapView, o usuário pode ver um mapa com a rota para o destino, calculada a partir do tipo de transporte selecionado. O app também apresenta o custo da viagem, além do tempo estimado até o destino.
 
+
 Marcelo Gabriel Lemos de Araujo - RM93096
 
 Pedro Gonçalves Leta - RM93059
