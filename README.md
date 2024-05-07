@@ -1,6 +1,6 @@
 ## SimpleMove: Seu aplicativo Mobility as a Service completo (MaaS)
 
-O SimpleMove é um aplicativo Kotlin inovador que revoluciona a forma como você se locomove na cidade. Com o SimpleMove, você pode encontrar rotas de transporte público e privado, gerenciar viagens utilizando mais de um meio de locomoção e centralizar todos os pagamentos em uma única plataforma segura e conveniente.
+O SimpleMove sera um aplicativo Kotlin inovador que revolucionara a forma como você se locomove na cidade. Com o SimpleMove, você podera encontrar rotas de transporte público e privado, gerenciar viagens utilizando mais de um meio de locomoção e centralizar todos os pagamentos em uma única plataforma segura e conveniente.
 
 **Funcionalidades**
 
