@@ -9,7 +9,9 @@ O SimpleMove sera um aplicativo Kotlin inovador que revolucionara a forma como v
 * **Pagamento centralizado:** Diga adeus a vários cartões e aplicativos de pagamento. O SimpleMove permite que você pague por todas as suas viagens em uma única plataforma, usando seu método de pagamento preferido.
 
 **Instruções**
+
 OBS: Necessário google maps api key para funcionar. (Colocar a variável MAPS_API_KEY em local.properties com sua key)
+
 A aplicação pode ser rodada pelo Android Studio, utilizando uma SDK Android versão 8.1 ou superior. Na tela inicial, é possível registrar uma conta e, a seguir, entrar para acessar a página Home.
 
 Na tela Home, é apresentado o crédito do usuário e um input para pesquisa de endereço de destino. Ao entrar com um endereço e tocar sobre o ícone de pesquisa, o usuário é redirecionado à tela MapView.
