@@ -23,13 +23,22 @@
                     <category android:name="android.intent.category.LAUNCHER" />
                 </intent-filter>
             </activity>
+        
+            <activity android:name=".MapActivity" android:exported="true">
+                <intent-filter>
+                    <action android:name="android.intent.action.MAIN"/>
+<!--                    <category android:name="android.intent.category.LAUNCHER"/>-->
+                </intent-filter>
+            </activity>
 
-        <activity
-            android:name=".HomePage"
-            android:exported="false" />
-        <activity
-            android:name=".MapView"
-            android:exported="false" />
+            <activity
+                android:name=".HomePage"
+                android:exported="false" />
+            <activity
+                android:name=".MapView"
+                android:exported="false" />
+
+        <meta-data android:value="${MAPS_API_KEY}" android:name="com.google.android.geo.API_KEY" />
 
     </application>
 
